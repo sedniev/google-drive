@@ -1,3 +1,14 @@
 <button (click)="auth()">auth</button>
-
+<br/>
+<br/>
+<ngx-file-drop dropZoneLabel="Drop files here"
+                                        multiple="false" 
+                                        (onFileDrop)="dropped($event)">
+                            <ng-template ngx-file-drop-content-tmp let-openFileSelector="openFileSelector">
+                                
+                               
+                            </ng-template>
+                        </ngx-file-drop>
 <router-outlet></router-outlet>
+<br/>
+<button (click)="createFile()">send</button>
